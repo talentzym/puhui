@@ -1,0 +1,158 @@
+#conversion-view{
+  .exchange-red-bag-list{
+    height: 100%;
+    width: 100%;
+    li {
+      height: 1.08rem;
+      border-bottom: .02rem solid #EEEEEE;
+      line-height: 1.08rem;
+      .checkBox {
+        margin-top: .2rem;
+      }
+    }
+    .exchange-account {
+      font-size: .24rem;
+      label {
+        font-size: .28rem;
+      }
+    }
+    .red-bag-tip {
+      font-size: .3rem;
+      line-height:1.08rem ;
+    }
+  } 
+  .exchange-red-bag-cont{
+    position: absolute;
+    top: 1.68rem;
+    bottom: .9rem;
+  }
+  .rdo {
+    width: 20px;
+    height: 0px;
+    background-color: #000;
+    margin-right: .1rem;
+    border-radius: 50%;
+    position: relative;
+    top: .26rem;
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      border-radius: 50%;
+      transition: .3s ease;
+    }
+    &:before {
+      top: 0px;
+      left: 0px;
+      width: 18px;
+      height: 18px;
+      background-color: #fff;
+      border: 1px solid #000;
+    }
+    &:after{
+      top: 6px;
+      left: 6px;
+      width: 8px;
+      height: 8px;
+      background-color: #fff;
+    }
+    &:checked:after {
+      top: 4px;
+      left: 4px;
+      width: 12px;
+      height: 12px;
+      background-color: #e6382c;
+    }
+    &:checked:before {
+      border-color: #e6382c;
+    }
+  }
+  .exchanging{
+    background: #d27973 !important;
+  }
+  .exchange-bot-confirm {
+    width: 2.2rem;
+    height: .9rem;
+    text-align: center;
+    line-height: .9rem;
+    color: #ffffff;
+    background-color: #e6382c;
+  }
+  .exchange-bot-account {
+    margin-top: .26rem;
+  }
+  .exchange-bot {
+    width: 7.5rem;
+    height: .9rem;
+    position: fixed;
+    bottom: 0;
+    margin: 0px auto;
+    border-top: .02rem solid #EEEEEE;
+    font-size: .3rem;
+    background: #ffffff;
+    padding-left: .4rem;
+    left: 0;
+    box-sizing: border-box;
+    .exchange-bot-quane {
+      margin-top: .26rem;
+      font-size: .3rem;
+    }
+    .exchange-bot-total {
+      margin-left: .1rem;
+      margin-top: .26rem;
+    }
+  }
+  .error-window {
+    width: 6rem;
+    height: 5.5rem;
+    z-index: 1000;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.2rem;
+    img {
+      width: 1.6rem;
+      margin: 0.7rem auto 0.45rem auto;
+    }
+    p {
+      font-size: 0.3rem;
+      color: #222;
+      text-align: center;
+    }
+    div {
+      width: 4.5rem;
+      height: 0.9rem;
+      text-align: center;
+      line-height: 0.9rem;
+      background: #E6382C;
+      color: #fff;
+      font-size: 0.36rem;
+      border-radius: 0.45rem;
+      margin: 0.56rem auto;
+    }
+  }
+  .exchange-listkong{
+    text-align: center;
+  }
+  .nocont{
+    text-align: center;
+    font-size: .24rem;
+    padding-top: 0.5rem;
+    img{
+      margin: 0rem auto;
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+  .botText{
+    min-height: 30px;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    vertical-align: middle;
+  }
+}

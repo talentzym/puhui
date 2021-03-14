@@ -1,0 +1,378 @@
+#newYear-view{
+  .plus-screen-content{
+    top: 0;
+    .plus-screen-scroll{
+      background: url(../images/bg-banner.png) no-repeat 0 0.28rem, url(../images/bg-shading.png) repeat;
+      background-size: 100%;
+      padding: 10.7rem 0 0.2rem 0;
+      position: relative;
+    }
+  }
+  .bottom-infor{
+    font-size: 0.22rem;
+    color: #ffebca;
+    text-align: center;
+    line-height: 1.22rem;
+    padding: 0.04rem 0;
+  }
+  .bottom-fan{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .model{
+    width: 7.02rem;
+    margin: 0 auto;
+    padding: 0.65rem 0.5rem 0.9rem 0.5rem;
+    /*background: ;*/
+    background-color: #ffebca;
+    box-sizing: border-box;
+    border-radius: 0.12rem;
+    margin-bottom: 0.24rem;
+    position: relative;
+    &.sign-in-model{
+      background: url(../images/bg-cloud.png) no-repeat 3.92rem 0.08rem;
+      background-color: #ffebca;
+      background-size: 2.9rem;
+      .sign-in-box{
+        width: 100%;
+        height: 5.1rem;
+        box-sizing: border-box;
+        margin-top: 0.4rem;
+      }
+      &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3.39rem;
+        left: 0.32rem;
+        width: 6.39rem;
+        height: 5.1rem;
+        background: url(../images/envelope.png);
+        background-size: 100%;
+      }
+    }
+    &.share-model:after{
+      content: "";
+      display: block;
+      position: absolute;
+      left: -.24rem;
+      top: 0.34rem;
+      width: 1.29rem;
+      height: 1.4rem;
+      background: url(../images/fan-left.png) no-repeat;
+      background-size: 100%;
+    }
+    &.recharge-model:after{
+      content: "";
+      display: block;
+      position: absolute;
+      right: -.24rem;
+      top: -0.18rem;
+      width: 1.27rem;
+      height: 1.24rem;
+      background: url(../images/fan-right.png) no-repeat;
+      background-size: 100%;
+      z-index: 0;
+    }
+    .model-title{
+      >img{
+        width: 2.48rem;
+        margin: 0 auto;
+      }
+    }
+    .model-label{
+      margin-top: 0.4rem;
+      font-size: 0.28rem;
+      color: #90460a;
+      line-height: 0.4rem;
+      text-align: center;
+    }
+    .button-box{
+      padding: 0.4rem 0;
+      display: flex;
+      .button-default{
+        background: linear-gradient( -45deg, rgb(235,41,58) 0%, rgb(239,55,50) 69%, rgb(243,68,41) 100%);
+        box-shadow: 0.025rem 0.043rem 0.08rem 0px rgba( 180, 61, 60, 0.16 );
+        width: 2.4rem;
+        height: 0.74rem;
+        font-size: 0.28rem;
+        color: #fff;
+        line-height: 0.74rem;
+        border-radius: 0.37rem;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+    .model-information{
+      h4{
+        font-size: 0.26rem;
+        color: #6d3507;
+        line-height: 0.48rem;
+      }
+      p{
+        font-size: 0.24rem;
+        color: #a75c1d;
+        text-align: justify;
+        line-height: 0.36rem;
+      }
+    }
+    .sign-in-box{
+      .sign-in-status{
+        text-align: center;
+        font-size: 0.26rem;
+        color: #90460a;
+        padding: 0.4rem 0;
+        position: relative;
+        z-index: 1;
+      }
+      .swiper-slide{
+        img{
+          width: 0.58rem;
+          margin: 0 auto;
+        }
+        p{
+          text-align: center;
+          color: #90460a;
+          font-family: arial;
+          font-weight: bold;
+          font-size: 0.3rem;        }
+      }
+      .signatureNum {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        font-size: 0.22rem;
+        color: #FFF;
+        margin-top: 0.6rem;
+      }
+      .sign-button{
+        width: 2.4rem;
+        height: 0.82rem;
+        border-radius: 0.41rem;
+        margin: 0.68rem auto 0 auto;
+        background: transparent;
+        position: relative;
+        z-index: 1;
+      }
+    }
+    .addressList{
+      font-size: 0.26rem;
+      color: #a75c1d;
+      text-align: right;
+      margin-bottom: 0.15rem;
+      padding-right: 0.2rem;
+      background: url(../images/address-icon.png) no-repeat 100% 0.07rem;
+      background-size: 0.12rem;
+    }
+  }
+  .window{
+    width: 100%;
+    height: 9.27rem;
+    border-radius: 0.2rem 0.2rem 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background: #fff;
+    padding-top: 0.4rem;
+    box-sizing: border-box;
+    .window-header{
+      padding: 0.14rem 0.4rem;
+      position:relative;
+      .window-title{
+        font-size: 0.36rem;
+        color: #252525;
+      }
+      a {
+        width: 0.5rem;
+        height: 0.5rem;
+        position: absolute;
+        right: 0.3rem;
+        top: 0.13rem;
+        cursor: pointer;
+        img{
+          width: 0.3rem;
+          margin: 0.1rem;
+        }
+      }
+    }
+    .window-content{
+      height: 8.1rem;
+      overflow: auto;
+      .window-scroll{
+        padding: 0 0.4rem;
+        .no-more{
+          font-size: 0.24rem;
+          color: #bbbbbb;
+          text-align: center;
+          margin: 0.2rem 0rem;
+          position: relative;
+          &:after,&:before{
+            content: "";
+            display: block;
+            height: 1px;
+            width: 0.88rem;
+            background: #ddd;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          &:before{
+            left: 1rem; 
+          }
+          &:after{
+            right: 1rem;
+          }
+        }
+      }
+    }
+  }
+  #recharge-window{
+    table{
+      width: 100%;
+      font-size: 0.26rem;
+      text-align:center;
+      thead{
+        color:#6d6d6d;
+        td:first-child{
+          width: 1.5rem;
+        }
+      }
+      tbody{
+        color: #252525;
+        td:last-child{
+          padding-right: 0.15rem;
+        }
+        td:first-child{
+          padding-left: 0.16rem;
+        }
+        tr:nth-child(1),tr:nth-child(2),tr:nth-child(3){
+          td:first-child{
+            color: #d82f2f;
+            background: url(../images/recharge-window-icon.png) no-repeat 0 0.23rem;
+            background-size: 0.47rem;
+          }
+        }
+      }
+      tr {
+        height: 0.94rem;
+        box-sizing: border-box;
+        border-bottom: 1px solid #dddddd;
+      }
+      td:last-child{
+        text-align: right;
+      }
+      td:first-child{
+        text-align: left;
+      }
+    }
+  }
+  #award-window{
+    background: #fff;
+    border-radius: 0.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 5.8rem;
+    height: 6rem;
+    .window-title{
+      text-align: center;
+    }
+    a{
+      top:-0.14rem;
+    }
+    .award-window-button{
+      width: 2.4rem;
+      height: 0.72rem;
+      border-radius: 0.36rem;
+      border: 1px solid #eb7256;
+      color: #e64f2c;
+      text-align: center;
+      line-height: 0.72rem;
+      font-size: 0.28rem;
+      margin: 0.6rem auto 0 auto;
+    }
+  }
+  dl.award{
+    margin: 0.16rem 0.45rem;
+    display: flex;
+    dt{
+      width: 1.21rem;
+      img{
+        width: 100%;
+      }
+    }
+    dd {
+      width: 3.7rem;
+      padding-left: 0.24rem;
+      box-sizing: border-box;
+      &.integral{
+        line-height: 1.21rem;
+        font-size: 0.26rem;
+        color: #252525;
+      }
+      &.voucher{
+        p{
+          font-size: 0.22rem;
+          color: #636363;
+          line-height: 0.32ren;
+          &:first-child{
+            font-size: 0.26rem;
+            color: #252525;
+            margin-bottom: 0.05rem;
+          }
+        }
+      }
+    }
+  }
+  #participat-window, #record-window{
+    dl.award{
+      margin: 0.5rem 0;
+      dd{
+        width: 6.7rem;
+      }
+    }
+  }
+  #record-window dl{
+    position: relative;
+    dd {
+      position: relative;
+      p:first-child{
+        font-weight: bold;
+      }
+      p:nth-child(2){
+        color: #363636;
+        height: 0.32rem;
+      }
+      p:nth-child(3){
+        font-size: 0.18rem;
+        color: #898989;
+        position: absolute;
+        left: 0.24rem;
+        bottom: 0;
+      }
+    }
+  }
+  .record-button{
+    width: 1.5rem;
+    height: 0.56rem;
+    text-align: center;
+    line-height: 0.56rem;
+    border-radius: 0.28rem;
+    font-size: 0.24rem;
+    color: #e64f2c;
+    border: 1px solid #eb7256;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:0;
+    &.record-button-overdue{
+      color: #bbbbbb;
+      border: 1px solid #f2f2f2;
+    }
+  }
+}

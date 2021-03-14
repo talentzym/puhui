@@ -1,0 +1,703 @@
+#projectDetail-view {
+  *{
+    box-sizing: border-box;
+  }
+  .plus-screen-scroll {
+    padding: 0rem;
+    padding-bottom: 0.8rem;
+  }
+  .borrowing-information {
+    padding: 0rem 0.4rem;
+    padding-top: 0.6rem;
+    height: 3.24rem;
+    text-align: center;
+    position: relative;
+    >p {
+      margin-top: 0.2rem;
+      font-size: 0.24rem;
+      color: #8F8F94;
+    }
+    .interest {
+      font-size: 0.66rem;
+      color: #E6382C;
+      position: relative;
+      span {
+        font-size: 0.3rem;
+        color: #fff;
+        width: 1.28rem;
+        display: inline-block;
+        height: 0.5rem;
+        line-height: 0.5rem;
+        font-weight: normal;
+        position: relative;
+        text-align: center;
+        z-index: 0;
+        top: -0.12rem;
+        left: 0.1rem;
+        &:before {
+          content: "";
+          width: 1.28rem;
+          height: 0.5rem;
+          border-radius: 0.07rem;
+          transform: skewX(-15deg);
+          background: #E6382C;
+          position: absolute;
+          left: 0rem;
+          top: 0rem;
+          z-index: -1;
+        }
+      }
+    }
+    .swiper-container {
+      margin-top: 0.5rem;
+      padding: 0.1rem 0;
+      position: absolute;
+      bottom: 0;
+      left: 0rem;
+      right: 0rem;
+      .swiper-wrapper{
+        padding: 0 0.4rem;
+        .swiper-slide p {
+          text-align: left;
+          font-size: 0.24rem;
+          color: #8F8F94;
+          &:first-child {
+            font-size: 0.3rem;
+            color: #444;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+        }
+        .proshu{
+          display: block;
+          width: .03rem;
+          height: .68rem;
+          position: absolute;
+          right: 0;
+          top: 0.04rem;
+          background-color: #f1f1f1;
+        }
+        .life-of-loan,
+        .project-star {
+          position: relative;
+          padding-right: 0.05rem;
+          &~img{
+            width: 0.32rem;
+            display: inline-block;
+            transform: translate(0.05rem,0.04rem);
+          }
+        }
+      }
+    }
+  }
+  .project-status {
+  width: 100%;
+  box-sizing: border-box;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  background: #E6382C;
+  padding: 0 0.4rem;
+  position: relative;
+    p {
+      color: #fff;
+      font-size: .3rem;
+    }
+    div {
+      width: 1.45rem;
+      height: 0.6rem;
+      line-height: 0.6rem;
+      border-radius: 0.05rem;
+      font-size: 0.24rem;
+      text-align: center;
+      background: #fff;
+      color: #E6382C;
+      position: absolute;
+      top: 0.3rem;
+      right: 0.4rem;
+      border: none;
+      outline: none;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+  }
+  .submit-button{
+    margin-top: 0;
+  }
+  .project-msg-window {
+    width: 6rem;
+    position: absolute;
+    background: #fff;
+    border-radius: 0.2rem;
+    z-index: 1000;
+    padding: 0.8rem 0.5rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .project-msg-window-title {
+      text-align: center;
+      font-size: 0.3rem;
+      color: #222;
+      font-weight: bold;
+      margin-bottom: 0.7rem;
+    }
+  }
+  .project-msg-window-content{
+    dl{
+      display: flex;
+      dt {
+        width: 0.48rem;
+      }
+      dd {
+        padding-left: 0.2rem;
+      }
+    }
+    img{
+      width: 100%;
+    }
+    button {
+      width: 100%;
+      height: 0.9rem;
+      border-radius: 0.45rem;
+      border: none;
+      font-size: 0.3rem;
+      color: #FFF;
+      background: #E6382C;
+      margin-top: 0.6rem;
+    }
+  }
+  #binding-window{
+    dl {
+      display: flex;
+      margin-bottom: 0.8rem;
+      dt {
+        width: 0.6rem;
+      }
+      dd {
+        padding-left: 0.36rem;
+        position: relative;
+        flex-grow: 1;
+        div {
+          width: 1.55rem;
+          height: 0.6rem;
+          border-radius: 0.3rem;
+          border: none;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          background: #E6382C;
+          color: #fff;
+          font-size: 0.24rem;
+          text-align: center;
+          line-height: 0.6rem;
+        }
+      }
+    }
+    img{
+      width: 100%;
+    }
+  }
+  .project-msg-window-content dd h3,
+  #binding-window dd h3 {
+    font-size: 0.28rem;
+  }
+  .project-msg-window-content p,
+  #binding-window p {
+    font-size: 0.24rem;
+    color: #8F8F94;
+  }
+  .project-msg-window-content dd p,
+  #binding-window dd p {
+    margin-top: 0.1rem;
+  }
+  #project-time-window dl {
+    padding-bottom: 0.48rem;
+  }
+  #project-time-window dd p {
+    margin-top: 0;
+    font-size: 0.24rem;
+    color: #8F8F94;
+  }
+  #project-time-window dd h3 {
+    margin-top: 0.1rem;
+    font-size: 0.3rem;
+  }
+  #binding-window {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-radius: 0.24rem 0.24rem 0 0;
+    z-index: 1000;
+    .binding-window-title {
+      font-size: 0.3rem;
+      font-weight: bold;
+      color: #222;
+      padding: 0.4rem 0.4rem 0.9rem 0.4rem;
+    }
+    .binding-window-footer {
+      padding: 0.4rem 0;
+      border: 1px solid #eeeeee;
+      text-align: center;
+    }
+    .binding-window-content {
+      padding: 0 0.4rem;
+    }
+  }
+  .project-detail-form {
+    padding: 0.2rem 0.4rem;
+    img {
+      width: 100%;
+    }
+    .form-action {
+      height: 1.2rem;
+      line-height: 1.22rem;
+      border-bottom: 1px solid #eee;
+      color: #444444;
+      font-size: 0.3rem;
+      position: relative;
+      &:last-of-type {
+        margin-bottom: 0.38rem;
+      }
+      >div {
+        position: absolute;
+        right: 0;
+        top: 0.31rem;
+        width: 1.55rem;
+        height: 0.6rem;
+        line-height: 0.6rem;
+        text-align: center;
+        border-radius: 0.3rem;
+        color: #E6382C;
+        border: 1px solid #E6382C;
+        font-size: 0.24rem;
+      }
+    }
+    .input-group {
+      width: 2.8rem;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 2.06rem;
+      input {
+        width: 100%;
+        height: 100%;
+        border-bottom: none;
+        padding-left: 0;
+        padding-right: 0.7rem;
+        color: #444;
+      }
+    }
+  }
+  h2 {
+    padding: 0 0.4rem;
+    margin: 0.4rem 0 0.2rem 0;
+    font-size: 0.3rem;
+    font-weight: bold;
+    color: #222;
+    z-index: 10;
+  }
+  #project-content-swiper {
+    padding: 0.1rem 0.4rem;
+    z-index: 100;
+    .swiper-slide {
+      height: 2rem;
+      box-shadow: 0px 0px 20px 0px rgba(153, 153, 153, 0.18);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      padding: 0.45rem 0.45rem 0 0.45rem;
+      &:first-child {
+        margin-left: 0;
+      }
+      h3 {
+        font-size: 0.24rem;
+        color: #222;
+      }
+      div,p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        line-clamp: 1;
+        font-size: 0.24rem;
+        color: #666666;
+      }
+      p:first-child {
+        margin-top: 0.15rem;
+        font-size: 0.24rem;
+      }
+    }
+    .lend-the-record-bg {
+      background-image: url(../../images/lend-the-record.jpg);
+    }
+    .lend-the-reward-bg {
+      background-image: url(../../images/lend-the-reward.jpg);
+    }
+    .project-detail-bg {
+      background-image: url(../../images/project-detail.jpg);
+    }
+    .reimbursement-documents-bg {
+      background-image: url(../../images/reimbursement-documents.jpg);
+    }
+    .relevant-document-bg {
+      background-image: url(../../images/relevant-document.jpg);
+    }
+    .risk-control-information-bg {
+      background-image: url(../../images/risk-control-information.jpg);
+    }
+  }
+  .relevant-document-box {
+    display: flex;
+    >div{
+      width: 1.6rem;
+      height: 0.8rem;
+      border-radius: 0.1rem;
+      margin-top: 0.3rem;
+      img {
+        width: 100%;
+      }
+      &:last-child {
+        margin-left: 0.18rem;
+        background: #ffafaf;
+        color: #fff!important;
+        line-height: 0.8rem;
+        text-align: center;
+      }
+    }
+  }
+  .select-voucher-model {
+    position: absolute;
+    top: 3.1rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: #f8f8f9;
+  }
+  .nav {
+    margin-left: 0.4rem;
+    margin-right: 1.28rem;
+    .swiper-slide {
+      text-align: left;
+      line-height: 1.34rem;
+    }
+  }
+  .phlc-card-voucher-nav {
+    position: absolute;
+    top: 0rem;
+    height: 1.34rem;
+    width: 100%;
+    font-size: 0.28rem;
+    margin-top: -1px;
+    left: 0;
+    text-align: center;
+    box-shadow: 0.02rem 0.02rem 0.15rem rgba(204,204,204,0.3);
+    z-index: 99;
+  }
+  .phlc-swiper-active:after {
+    background: transparent;
+  }
+  .phlc-card-voucher-content {
+    position: absolute;
+    background: #f8f8f9;
+    bottom: 1.24rem;
+    width: 100%;
+    top: 1.34rem;
+  }
+  .content > p {
+    height: 1.1rem;
+    text-align: center;
+    padding-top: 0.56rem;
+  }
+  .voucher-list-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 0.4rem;
+    height: 1.24rem;
+    line-height: 1.24rem;
+    background: #fff;
+    font-size: 0.28rem;
+    color: #222;
+    z-index: 1000;
+    box-shadow: 0px 0px 15px #e1e1e1;
+    button {
+      position: absolute;
+      right: 0.4rem;
+      top: 0.3rem;
+      width: 1.55rem;
+      height: 0.6rem;
+      border-radius: 0.3rem;
+      color: #fff;
+      border: 1px solid #E6382C;
+      background: #E6382C;
+    }
+    span {
+      color: #E6382C;
+    }
+  }
+  section {
+    border: 1px solid #fff;
+  }
+  .section-active {
+    box-shadow: 0.015rem 0.026rem 0.18rem rgba( 230, 56, 44, 0.16 );
+    border: 0px solid #E6382C;
+    background: url(../../images/voucher-active-bg.png) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 0.11rem!important;
+  }
+  .section-top:before {
+    display: block;
+    content: "";
+    width: 0.18rem;
+    height: 0.24rem;
+    position: absolute;
+    top: 1.55rem;
+    left: 0;
+    transform: translateX(-0.03rem);
+    z-index: 1000;
+    border-radius: 50%;
+    background: url(../../images/voucher-right.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  .section-top:after {
+    display: block;
+    content: "";
+    width: 0.18rem;
+    height: 0.24rem;
+    position: absolute;
+    top: 1.55rem;
+    right: 0;
+    transform: translateX(0.03rem);
+    z-index: 1000;
+    border-radius: 50%;
+    background: url(../../images/voucher-left.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  .section-active .section-top:before,
+  .section-active .section-top:after{
+    display: none;
+  }
+  .section-bottom {
+    z-index: 100;
+    padding: 0.1rem 0.15rem 0.1rem 0.15rem;
+    font-size: 0.24rem;
+    position: relative;
+    color: #666;
+    transition: height 0.3s;
+  }
+  .select-voucher-model section{
+    border-radius: 0;
+    border: none;
+    background-color: #fff;
+    border-radius: 0.15rem;
+    position: relative;
+    padding: 0 0.2rem;
+    color: #999;
+    height: 2.28rem;
+    z-index: 0;
+    margin: 0.3rem 0.4rem 0 0.4rem;
+  }
+  .section-top p:first-child{
+    margin-top: 0.45rem;
+  }
+  .circle {
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 0.2rem;
+    position: absolute;
+    right: 0.4rem;
+    top: 0.08rem;
+    border: 1px solid #666;
+  }
+  .section-active .circle {
+    border: 1px solid #E6382C;
+    &:after{
+      content: "";
+      display: block;
+      width: 50%;
+      height: 50%;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: #E6382C;
+      transform: translate(-50%,-50%);
+    }
+  }
+  .phlc-card-voucher-nav a,
+  #binding-window a {
+    position: absolute;
+    width: 0.88rem;
+    height: 0.88rem;
+    top: 0.23rem;
+    right: 0.4rem;
+    padding: 0.26rem;
+    img{
+      width: 0.31rem;
+    }
+  }
+  .phlc-swiper-active {
+    color: #E6382C;
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      width: 0.6rem;
+      height: 0.03rem;
+      position: absolute;
+      left: 0.3rem;
+      top: 0.6rem;
+    }
+  }
+  .select-voucher-model .no-voucher{
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.28rem;
+    color: #444;
+    border: 1px solid #fff;
+  }
+  .no-voucher.section-active {
+    background: none;
+    border: 1px solid #E6382C;
+    box-shadow: 0.015rem 0.026rem 0.18rem rgba( 230, 56, 44, 0.16 );
+  }
+  .no-voucher .circle{
+    top: 0.2rem;
+    right: 0.6rem;
+  }
+  section {
+    background-color: #fff;
+    margin-top: 0.3rem;
+    border-radius: 0.15rem;
+    position: relative;
+    padding: 0 0.2rem;
+    color: #999;
+    z-index: 0;
+    &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-size: 1.08rem;
+      background-repeat: no-repeat;
+      background-position-x: 5.36rem;
+      background-position-y:  0.6rem;
+      z-index: -1;
+    }
+    .section-left {
+      position: absolute;
+      top: -0.01rem;
+      left: -0.01rem;
+      width: 0.93rem;
+      font-size: 0.2rem;
+      height: 0.31rem;
+      line-height: 0.31rem;
+      color: #fff;
+      text-align: center;
+      border-radius: 0.11rem 0;
+      background: #e6382c;
+    }
+    .section-right {
+      position: absolute;
+      top: 0;
+      right: -0.08rem;
+      font-size: 0.2rem;
+      height: 0.38rem;
+      line-height: 0.32rem;
+      color: #fff;
+      text-align: center;
+    }
+    .section-right-new{
+      width: 0.88rem;
+      background: url(../../images/phlc-card-voucher-new.png) no-repeat;
+      background-size: 100%;
+    }
+    .section-right-old{
+      width: 1.15rem;
+      background: url(../../images/phlc-card-voucher-old.png) no-repeat;
+      background-size: 100%;
+    }
+    .section-top {
+      z-index: 100;
+      padding: 0.175rem 0.15rem;
+      border-bottom: 1px dashed #e1e1e1;
+      p:first-child {
+        font-size: 0.24rem;
+        color: #222;
+        margin-top: 0.55rem;
+        font-weight: bold;
+        span {
+          color: #E6382C;
+          font-size: 0.16rem;
+          b {
+            font-size: 0.4rem;
+            margin: 0 0.1rem;
+          }
+        }
+      }
+      p:nth-child(2),p:nth-child(3){
+        color: #444;
+        font-size: 0.24rem;
+      }
+      p:nth-child(2) span {
+        padding: 0 0.03rem;
+      }
+    }
+  }
+  .agreement{
+    padding: 0 .4rem .5rem;
+    margin-top: .2rem;
+    line-height: 0.4rem;
+    .agreementTip1{
+      font-size: .24rem;
+    }
+    .agreementTip2{
+      font-size: .24rem;
+      color: #4184E8;
+    }
+    input[type="checkbox"]{
+      width:16px;
+      height:16px;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 16px!important;
+      margin-right: 0.19rem;
+      position: relative;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      margin-top: -.1rem;
+      }
+    input[type="checkbox"]::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #fff;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #999999;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      }
+    input[type="checkbox"]:checked::before{
+      content: "\2713";
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width:100%;
+      color:#ff653a;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}

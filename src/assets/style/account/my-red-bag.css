@@ -1,0 +1,116 @@
+.phlc-my-red-bag-service {
+  display: block;
+  width: .38rem;
+  height: .38rem;
+  position: absolute;
+  top: .83rem;
+  right: .4rem;
+}
+.my-red-box-cont{
+  background: #ffffff;
+}
+.phlc-my-red-bag-head{
+  position: fixed;
+  top: 0;
+}
+.phlc-my-red-bag-service img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.phlc-my-red-bag-help {
+  display: block;
+  width: .42rem;
+  height: .42rem;
+  position: absolute;
+  top: .83rem;
+  right: 1.08rem;
+}
+
+.phlc-my-red-bag-help img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.phlc-my-red-bag-cont {
+  width: 7.5rem;
+  margin: 0 auto;
+  padding-top: .3rem;
+ 
+}
+.phlc-my-red-bag{
+  padding-top: .1rem;
+  background-color:#ffffff;
+  height: 100%;
+  
+}
+.my-red-bag-time{
+  width: 100%;
+  height: .7rem;
+  line-height: .7rem;
+  padding: 0 .4rem;
+  margin: 0 auto;
+  background:#f5f5f5;
+  box-sizing: border-box;
+  font-size: 0.24rem;
+}
+.my-red-bag-income{
+  margin-left:.1rem;
+}
+
+.my-red-contR{
+  /*line-height: 1.2rem;*/
+  font-size: .3rem;
+}
+.my-red-contL p{
+  height: .4rem;
+  line-height: .4rem;
+}
+.my-red-contL p:nth-of-type(1){
+  color: #222222;
+  font-size: .3rem;
+}
+.my-red-contL p:nth-of-type(2){
+  color: #999999;
+  font-size: .26rem
+}
+.my-red-bot-tip{
+  font-size: .24rem;
+  color: #999999;
+  text-align: center;
+  margin-top: .4rem;
+}
+.my-red-boxlist-box{
+  border-bottom: .02rem solid #EEEEEE;
+  padding: .45rem .4rem .3rem;
+  margin: 0 auto;
+  height: 1.5rem;
+  background-color:#ffffff;
+  box-sizing: border-box;
+}
+.ddd{
+  background-color: #DDDDDD !important;
+  color: #ffffff !important;
+  border: 0 !important;
+  
+}
+/*.mui-scroll-wrapper{
+  padding-top: 5.2rem;
+}
+*/
+.myRedMscroll{
+  width: 7.5rem;
+  position: absolute;
+  bottom: 0;
+  top:0rem;
+  margin: 0 auto;
+  left: 50%;
+  margin-left: -3.75rem;
+}
+.myRedMscrollCont1 {
+    height: 100%;
+}
+.my-red-bag-income-tip{
+  color: #E6382C !important;
+}

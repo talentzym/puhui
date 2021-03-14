@@ -1,0 +1,526 @@
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+code,
+em,
+img,
+q,
+small,
+strong,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+table,
+tbody,
+tr,
+th,
+td,
+input,
+header,
+section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:active,
+a:hover,
+a:focus,
+a:visited {
+	text-decoration: none;
+	outline: none;
+}
+
+a,
+img {
+	-webkit-touch-callout: none;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+html,body{
+  /*position: fixed;*/
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color:transparent;
+  -webkit-appearance:none;
+  overflow: auto;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+/*设置input placeholder字体*/
+
+::-webkit-input-placeholder {
+	/* WebKit browsers */
+	color: #bbb;
+	font-size: 0.3rem;
+}
+
+:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #bbb;
+	font-size: 0.3rem;
+}
+
+::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #bbb;
+	font-size: 0.3rem;
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10+ */
+	color: #bbb;
+	font-size: 0.3rem;
+}
+/*清除默认样式*/
+textarea,
+input[type="password"],
+input[type="text"],
+input[type="tel"],
+input[type="number"] {
+	resize: none;
+	outline: 0;
+	-webkit-appearance: none;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	background: #fff;
+	font-family: "微软雅黑";
+	cursor: pointer;
+	font-size: 0.36rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-weight: normal;
+	outline: none;
+}
+
+
+/*合并边框*/
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input[type=text]:focus,
+input[type=submit]:focus,
+input[type=radio]:focus,
+input[type=checkbox]:focus,
+input[type=password]:focus {
+	outline: none;
+}
+
+select {
+	background: transparent;
+	border: 1px solid #dcdcdc;
+	outline: none;
+}
+
+i,
+em {
+	font-style: normal;
+}
+
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
+	-webkit-appearance: none;
+	resize: none;
+}
+
+
+/*全局背景色*/
+
+body {
+	background-color: #f8f8f9;
+}
+
+a {
+	cursor: pointer;
+}
+
+img {
+	display: block;
+}
+
+strong,
+b {
+	font-weight: normal;
+}
+
+a,
+button,
+input {
+	-webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+
+/*清楚浮动*/
+
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+/*修改mint-ui输入框样式*/
+.mint-cell-wrapper{
+  padding: 0;
+  background-image: none;
+}
+.mint-cell {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#d9d9d9), color-stop(50%, #d9d9d9), color-stop(50%, transparent));
+  background-image: linear-gradient(0deg, #d9d9d9, #d9d9d9 50%, transparent 50%);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 1.1rem;
+  margin-top: 0.2rem;
+}
+
+.field-err{
+  height: 0.2rem;
+}
+
+.submit-button{
+  width: 6.7rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  margin: 0.7rem auto 0 auto;
+  text-align: center;
+  font-size: 0.36rem;
+  /*font-weight: bold;*/
+  color: #fff;
+  background: #E6382C;
+  border-radius: 0.45rem;
+}
+.font-size-20{
+  font-size: 0.2rem;
+}
+.font-size-24{
+  font-size: 0.24rem;
+}
+.font-size-26{
+  font-size: 0.26rem;
+}
+.font-size-28{
+  font-size: 0.28rem;
+}
+.font-size-30{
+  font-size: 0.3rem;
+}
+.font-size-36{
+  font-size: 0.36rem;
+}
+.font-size-40{
+  font-size: 0.4rem;
+}
+.color-e6382c{
+  color: #E6382C;
+}
+.color-486FCA{
+  color: #486FCA;
+}
+.color-444{
+  color: #444;
+}
+.color-444{
+  color: #666;
+}
+.text-align-center{
+  text-align: center;
+}
+.background-color-e6382c{
+  background-color: #E6382C!important;
+}
+.background-color-ff9a9a{
+  background-color: #ff9a9a;
+}
+.input-err-border{
+  border-bottom: 1px solid #E6382C!important;
+}
+/*表单清除按钮*/
+.form-action-clear{
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  transform: translateY(-50%);
+  color: #999;
+}
+.form-action-password .form-action-clear{
+  right: 1.2rem;
+}
+input:focus:valid+.form-action-clear{
+  opacity: 1;
+}
+input~.form-action-clear{
+  opacity: 0;
+}
+/*密码框小眼睛按钮*/
+.form-action-password .form-action-eye{
+  width: 0.88rem;
+  height: 0.88rem;
+  position: absolute;
+  top: 0.06rem;
+  right: 0;
+  background: url(../../images/phlc-form-eye-close.png) no-repeat 50% 50%;
+  background-size: .36rem;
+}
+.form-action-password .form-action-eye.visual{
+  background: url(../../images/phlc-form-eye-open.png) no-repeat 50% 50%;
+  background-size: .36rem;
+}
+/*表单基本样式*/
+.form-action{
+  height: 1.4rem;
+  position: relative;
+}
+.form-action input{
+  height: 1rem;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: .36rem;
+}
+.form-action .form-action-code{
+  position: absolute;
+  font-size: 0.26rem;
+  border: 1px solid #e6382c;
+  right: 0;
+  top: 0.21rem;
+  border-radius: 0.36rem;
+  box-sizing: content-box;
+  margin: 0 2px;
+  padding: 0.1rem 0.2rem;
+  color: #E6382C;
+}
+.form-action p{
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+  color: #E6382C;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+}
+/*基本布局*/
+.plus-screen-view{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 7.5rem;
+  margin-left: -3.75rem;
+}
+.plus-screen-view > .plus-screen-content{
+  position: absolute;
+  top: 0.88rem;
+  left: 0;
+  width: 7.5rem;
+  bottom: 0;
+  overflow: auto;
+  background: #fff;
+  /*-webkit-overflow-scrolling: touch;*/
+}
+.plus-screen-view > .plus-screen-content .plus-screen-scroll{
+  padding: 0 0.4rem;
+  box-sizing: border-box;
+}
+.plus-screen-view > .plus-screen-content .plus-screen-scroll .empty-icon{
+  display: inline-block;
+}
+.mescroll-totop{
+  bottom: 2.5rem!important;
+}
+@font-face {
+  font-family: DINBold;
+  src: url('../../fonts/DIN-Bold.otf');
+}
+.phlc-yxfont{
+  font-family: 'DINBold'!important;
+}
+/*一级黑背景*/
+.phlc-first-black{
+  background-color: #222222;
+}
+/*二级黑背景*/
+.phlc-second-black{
+  background-color: #444444;
+}
+/*三级黑背景*/
+.phlc-third-black{
+  background-color: #666666;
+}
+/*四级黑背景*/
+.phlc-fourth-black{
+  background-color: #999999;
+}
+/*五级黑背景*/
+.phlc-five-black{
+  background-color: #dbdbdb;
+}
+/*全局高亮颜色*/
+.phlc-red-pressed{
+  background-color: #d72828;
+}
+.phlc-red-normal{
+  background-color: #e6382c!important;
+}
+.phlc-red-disbled{
+  background-color: #ff9a9a!important;
+}
+/*字体颜色*/
+.phlc-red-pressed-color{
+  color: #d72828;
+}
+.phlc-red-normal-color{
+  color: #e6382c!important;
+}
+.phlc-red-disbled-color{
+  color: #ff9a9a;
+}
+.phlc-white-color{
+  color: #fff!important;
+}
+/*边框颜色*/
+.phlc-red-pressed-border{
+  border:1px solid #d72828;
+}
+.phlc-red-normal-border{
+  border:1px solid #e6382c;
+}
+.phlc-red-disbled-border{
+  border:1px solid #ff9a9a;
+}
+/*合伙人模块*/
+.phlc-brown-pressed{
+  background-color: #cca874;
+}
+.phlc-brown-normal{
+  background-color: #d6b686;
+}
+.phlc-brown-disbled{
+  background-color: #f6d9b0;
+}
+/*一级线条颜色*/
+.phlc-first-lines{
+  border-color: #ededef;
+}
+/*次级线条颜色*/
+.phlc-first-lines{
+  border-color: #eeeeee;
+}
+/*一级黑标题*/
+.phlc-first-black-color{
+  color: #222222!important;
+}
+/*二级黑标题*/
+.phlc-second-black-color{
+  color: #444444;
+}
+/*三级黑标题*/
+.phlc-third-black-color{
+  color: #666666;
+}
+/*四级黑标题*/
+.phlc-fourth-black-color{
+  color: #999999;
+}
+/*五级黑标题*/
+.phlc-five-black-color{
+  color: #dbdbdb;
+}
+.height100{
+  height: 100%;
+}
+.display-none{
+  display: none;
+}
+.display-block{
+  display: block;
+}
+.wx-back{
+  position: fixed;
+  left: .07rem;
+  top: 0rem;
+  width: 0.88rem;
+  height: 0.88rem;
+  box-sizing: border-box;
+  line-height: 0.88rem;
+  text-align: center;
+  font-size: 0.4rem;
+  z-index: 100;
+  color: inherit;
+  padding: 0.25rem 0.33rem;
+}
+.wx-back img{
+  width: 0.22rem;
+  height: 0.38rem;
+}
+.p-common{
+  font-size: 0.28rem;
+  color: #8f8f94;
+}
+.text-align-center{
+  text-align: center;
+}
+.phlc-marginT-30{
+  margin-top: 0.3rem;
+}
+.padding-top-100{
+  padding-top: 1rem;
+}
+.mint-indicator-wrapper{
+  z-index: 1000;
+}
+.header-shadow {
+  box-shadow: 0 0 0.2rem #cec9c9;
+}
+
+.layer-class~.layui-m-layerbtn span:last-child{
+  color: #e6382c;
+}

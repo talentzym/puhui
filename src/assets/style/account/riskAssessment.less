@@ -1,0 +1,55 @@
+#riskAssessment-view{
+  .phlc-riskAssessment-topic {
+    padding-top: 0.3rem;
+    p {
+      font-size: 0.36rem;
+      color: #444;
+      margin-bottom: 0.1rem;
+    }
+  }
+  .options-box {
+    padding-bottom: 0.5rem;
+    div {
+      width: 100%;
+      height: 0.9rem;
+      border-radius: 0.45rem;
+      border: 1px solid #dbdbdb;
+      padding: 0.15rem 0.4rem;
+      padding-right: 1.2rem;
+      color: #666;
+      margin-top: 0.3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      word-wrap: break-word;
+      font-size: 0.24rem;
+      box-sizing: border-box;
+    }
+    .options-active {
+      color: #E6382C;
+      border-color: #E6382C;
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0.4rem;
+        top: 0.32rem;
+        width: 0.36rem;
+        height: 0.26rem;
+        background: url(../../images/riskAssessmentActive.png) no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+  .phlc-view-index {
+    font-size: 0.24rem;
+    span {
+      font-size: 0.48rem;
+    }
+  }
+  #topic-on{
+      background: #fff;
+      color: #e6382c;
+  }
+}

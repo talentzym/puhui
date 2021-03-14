@@ -1,0 +1,355 @@
+#dailyCheckIn-view{
+  .phlc-back-header {
+    font-size: 0.36rem;
+    z-index: 100;
+    width: 100%;
+    text-align: center;
+    padding: .2rem 0.4rem 0rem 0.2rem;
+    height: 0.88rem;
+    background: #fff;
+    z-index: 100;
+    box-sizing: border-box;
+    .phlc-set-back{
+      display: block;
+      position: absolute;
+      left: .07rem;
+      width: .88rem;
+      height: .88rem;
+      top: .2rem;
+      z-index: 1000;
+    }
+    i.iconfont{
+      font-size: 0.36rem;
+      text-align: center;
+      line-height: 0.6rem;
+      color: #fff;
+    }
+    .phlc-my-red-bag-service {
+      display: block;
+      color: #fff;
+      height: .38rem;
+      font-size: .28rem;
+      position: absolute;
+      top: .3rem;
+      right: .4rem;
+      z-index: 111;
+    }
+  }
+  .plus-screen-content{
+    top: 0;
+    overflow-x: hidden;
+    .plus-screen-scroll{
+      padding: 0;
+      background: url(../../images/bg-image.png) no-repeat;
+      background-color: #F8F8F9;
+      background-size: 100%;
+      min-height: 100%;
+      padding: 1.6rem 0 0.53rem 0;
+      position: relative;
+      .statistical{
+        position: relative;
+        padding-left: .4rem;
+        p{
+          color:#fff;
+        }
+        .checkInRule{
+          position: absolute;
+          right: 0;
+          top: .3rem;
+          display: inline-block;
+          width:1.36rem;
+          height:.48rem;
+          line-height: .48rem;
+          font-size: .24rem;
+          color: #fff;
+          text-align: center;
+          &::after{
+            position: absolute;
+            left: 0;
+            content: '';
+            width: 1.36rem;
+            height:.48rem;
+            background:rgba(255,255,255,1);
+            opacity:0.16;
+            border-radius:.24rem 0 0 .24rem;
+          }
+        }
+      }
+      .signIn-content{
+        width: 6.70rem;
+        // height: 3.68rem;
+        margin: 0 auto;
+        background:#fff;
+        border-radius: .16rem;
+        position: relative;
+        box-shadow: 0px 0.05rem 0.2rem 0px #dddddd;
+        box-sizing: border-box;
+        padding: .6rem .32rem;
+        margin-top: .3rem;
+        transition: all .3s linear;
+        &::before{
+          content: '';
+          display: inline-block;
+          width: 2rem;
+          height: .68rem;
+          background: url(../../images/box-bottom.png) no-repeat;
+          background-size: 100% 100%;
+          position: absolute;
+          bottom: -38px;
+          left: 134px;
+        }
+        .change-btn{
+          position: absolute;
+          bottom: -18px;
+          left: 172px;
+          font-size: .24rem;
+          color: #666666;
+          .icon-arrow{
+            display: inline-block;
+            width:0;
+            height:0;
+            border-right: .08rem solid transparent;
+            border-left: .08rem solid transparent;
+            position: absolute;
+            right: -13px;
+            top: 7px;
+          }
+          .bottom{
+            border-top: .08rem solid #666666;
+          }
+          .top{
+            border-bottom: .08rem solid #666666;
+          }
+        }
+        .sign-btn{
+          display: block;
+          width: 4.8rem;
+          height: .88rem;
+          margin: 0 auto;
+          background:linear-gradient(90deg,rgba(255,115,60,1),rgba(254,63,21,1));
+          border-radius: .44rem;
+          font-size: .32rem;
+          text-align: center;
+          color: #fff;
+          line-height: .88rem;
+          margin-bottom: .6rem;
+        }
+        .signed-in {
+          background:linear-gradient(90deg,rgba(255,203,183,1),rgba(253,144,120,1))!important;
+        }
+        .canlendarPanel{
+          display: flex;
+          flex-direction: column;
+          .canlendar-header {
+            line-height: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .currenDate {
+              margin: 0 20px;
+              font-size: .32rem;
+              color: #222222;
+            }
+            .pre, .next {
+              span{
+                display: inline-block;
+                position: relative;
+                .icon {
+                  display: inline-block;
+                  width:0;
+                  height:0;
+                  border-top: .1rem solid transparent;
+                  border-bottom: .1rem solid transparent;
+                  position: absolute;
+                  top:-26px;
+                }
+                .left-small-icon{
+                  border-right: .1rem solid #666666;
+                }
+                .right-small-icon{
+                  border-left: .1rem solid #666666;
+                }
+                .opacity{
+                  opacity:0.32;
+                }
+              }
+            }
+          }
+          .canlendar-main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            ul.main {
+              flex: 1;
+              display: grid;
+              grid-gap: .36rem;
+              grid-template-columns: repeat(7, 1fr);
+              flex-wrap: wrap;
+              align-items: center;
+              padding-bottom: 10px;
+              font-size: .22rem;
+              margin-top: .2rem;
+              li {
+                position: relative;
+                width: .56rem;
+                // transition: all .1s linear;
+                .i-coin{
+                  display: inline-block;
+                  width: .56rem;
+                  height: .56rem;
+                  position: relative;
+                }
+                .signed {
+                  background: url(../../images/coin.png) no-repeat;
+                  background-size: 100% 100%;
+                }
+                .unsigned {
+                  background: url(../../images/coin2.0.png) no-repeat;
+                  background-size: 100% 100%;
+                }
+                .repair-img{
+                  display: inline-block;
+                  width: .56rem;
+                  height: .30rem;
+                  background: url(../../images/repair-img.png) no-repeat;
+                  background-size: 100% 100%;
+                  position: absolute;
+                  top: -5px;
+                  right: -19px;
+                }
+              }
+              .disabled {
+                color: #ddd;
+                cursor: default;
+              }
+              .signed-text {
+                color: #FF5A00;
+              }
+              .unsigned-text {
+                color: #222222;
+              }
+              .missedSign-text {
+                color: #999999;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .window{
+    width: 6rem;
+    padding: 0.58rem 0;
+    box-sizing: border-box;
+    border-radius: 0.24rem;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    .winImg{
+      width: 3.39rem;
+      margin: 0.45rem auto 0.3rem auto;
+    }
+    .tipsImg{
+      width: 1.72rem;
+      margin: 0.45rem auto 0.3rem auto;
+    }
+    p{
+      text-align: center;
+    }
+    .knowbtn{
+      width: 4rem;
+      height: 0.88rem;
+      line-height: 0.88rem;
+      text-align: center;
+      border-radius: 0.44rem;
+      margin: 0.65rem auto 0 auto;
+      font-size: 0.32rem;
+      color: #fff;
+      background:linear-gradient(90deg,rgba(255,115,60,1),rgba(254,63,21,1));
+    }
+    .btn-group{
+      width: 100%;
+      height: .87rem;
+      display: flex;
+      flex-wrap: nowrap;
+      border-top: 1px solid #F5F5F5;
+      margin-top: .6rem;
+      i{
+        display: inline-block;
+        width: 2.99rem;
+        height: .87rem;
+        line-height: .87rem;
+        font-size: .3rem;
+        text-align: center;
+      }
+      .cancel{
+        color: #BBBBBB;
+        border-right: 1px solid #F5F5F5;
+      }
+      .repair{
+        color: #E6382C;
+      }
+    }
+    
+  }
+  .tipswindow{
+    padding-bottom: 0;
+  }
+  .mask{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background: rgba(0, 0, 0, .5);
+    pointer-events: auto;
+    width: 100%!important;
+  }
+  .text-32{
+    font-size: .32rem;
+  }
+  .text-48{
+    font-size: .48rem;
+  }
+  .text-40{
+    font-size: .4rem;
+  }
+  .text-26{
+    font-size: .26rem;
+  }
+  .text-28{
+    font-size: .28rem;
+  }
+  .text-color-222{
+    color: #222222;
+  }
+  .text-color-444{
+    color: #444444;
+  }
+  .text-color-FF5A00{
+    color: #FF5A00;
+  }
+  // .slide-enter{
+  //   opacity:0;
+  //   // transform: translate(-50px,0px);
+  // }
+  // .slide-leave-active {
+  //   opacity:0;
+  //   // transform:translate(0px,-50px);
+  // }
+  .v-enter , .v-leave-to {
+      opacity: 0;
+  }
+  .v-enter-active , .v-leave-active {
+      transition: opacity .3s linear;
+  }
+  .displayNone{
+    display: none!important;
+  }
+}
